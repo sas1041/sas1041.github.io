@@ -5,6 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* dynamic navbar */
 .navbar {
     background:#43964F;
 }
@@ -28,6 +29,7 @@ body {
     justify-content: flex-end;
 }
 
+/* index page header image/text */
 .hero {
     display: flex;
     flex-direction: column;
@@ -37,6 +39,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -78,6 +81,30 @@ h2 {
     text-align: center;
 }
 
+/* Trick to prevent content reflow on slower browsers */
+.responsive-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#description .responsive-container {
+    /*padding-bottom: 70.57%;*/ /* 385/546 = 100% aspect ratio of image */
+    padding-bottom: 56.45%; /* 385/546 = 70.57% = 100% aspect ratio of image -> 80% of this = 56.45% */
+    width: 80%;
+}
+#localActivities .responsive-container {
+    padding-bottom: 62.45%; /* 341/546 = aspect ratio of image */
+    margin-bottom: 20px;
+}
+.responsive-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #amenities li {
     list-style: none;
 }
@@ -86,8 +113,6 @@ h2 {
     text-align: center;
 }
 #localActivities img {
-    max-width: 100%;
-    margin-bottom: 20px;
     box-shadow: 0.5px 0.5px 3px black;
 }
 
@@ -100,6 +125,7 @@ h2 {
     width: 100%;
 }
 
+/* Icons below the photo gallary */
 #photoIcons {
     margin-top: 5px;
     width: 100%;
@@ -119,6 +145,7 @@ h2 {
     filter: blur(0);
 }
 
+/* page footers for all pages */
 .page-footer {
     background-color: #191f19;
     color: #ccc;
@@ -140,10 +167,6 @@ h2 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    #description img {
-        margin-bottom: 20px;
-    }
-
     #photoIcons {
         display: none;
     }
@@ -151,6 +174,10 @@ h2 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+    #description .responsive-container {
+        margin-bottom: 20px;
+    }
+
     .nav-link {
         text-align: center;
     }
@@ -166,13 +193,16 @@ h2 {
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-    #description img {
+    #description .responsive-container {
+        padding-bottom: 63.51%; /* 385/546 = 70.57% = 100% aspect ratio of image -> 90% of this = 63.51% */
         width: 90%;
     }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}
