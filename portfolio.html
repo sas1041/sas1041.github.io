@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+        <title>Shane Smith Portfolio</title>
+        <meta name="author" content="Shane Smith">
+        <meta name="description" content="">
+        <meta name="keyword" content="Shane Smith, SRU, Slippery Rock University, ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="./vendor/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+    <body>
+        <div id="menu">
+            <i id="menuX" class="fas fa-bars fa-3x cursor"></i>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <main id="portfolio">
+            <i id="menuIcon" class="fas fa-bars fa-3x cursor"></i>
+            <a href="index.html" id="leftArrow" class="cursor">
+                <i class="fas fa-angle-left fa-3x"></i>
+                <span class="animate__animated animate__faster">Home</span>
+            </a>
+            <div id="content">
+                <h1>Portfolio</h1>
+                <p>My projects consist of Web Applications built with a variety of languages (Java, PHP, Python, etc), simple static websites made for small businesses, mobile apps made with React-Native, and various Cybersecurity & Computer Science class projects. To see more, please visit my Github and Expo!</p>
+                <div id="projects">
+                    <div id="schoolManagementPanel" class="panel">
+                        <img src="./images/school_management/thumb.jpg">
+                        <div class="panelText">
+                            <p>School Management System</p>
+                        </div>
+                    </div>
+                    <div id="yardsPanel" class="panel">
+                        <img src="./images/yards_website/thumb.jpg">
+                        <div class="panelText">
+                            <p>Yard's Continental</p>
+                        </div>
+                    </div>
+                    <div id="requestPanel" class="panel">
+                        <img src="./images/request_app/requestApp.PNG">
+                        <div class="panelText">
+                            <p>Request Web App</p>
+                        </div>
+                    </div>
+                    <div id="garagePanel" class="panel">
+                        <img src="./images/garage_website/garage.PNG">
+                        <div class="panelText">
+                            <p>Jim Kriley Garage</p>
+                        </div>
+                    </div>
+                    <div id="uploadHubPanel" class="panel">
+                        <img src="./images/upload_hub/upload_hub.PNG">
+                        <div class="panelText">
+                            <p>SRU Upload Hub</p>
+                        </div>
+                    </div>
+                    <div id="covidTrackerPanel" class="panel">
+                        <img src="./images/covid_tracker/covid_tracker.png">
+                        <div class="panelText">
+                            <p>COVID-19 Tracker</p>
+                        </div>
+                    </div>
+                    <div id="conversionAppPanel" class="panel">
+                        <img src="./images/conversion_app/conversion_app.png">
+                        <div class="panelText">
+                            <p>Metric Converter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="schoolManagement" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="schoolManagementCarousel" class="carousel carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#schoolManagementCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="1"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="2"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="3"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="4"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="5"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="6"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="7"></li>
+                        <li data-target="#schoolManagementCarousel" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/school_management/landing.jpg" alt="School Management System landing page" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/login.jpg" alt="Login page with username and password" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/districtHomepage.jpg" alt="Homepage for a user assigned to a district with user information" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/userList.jpg" alt="Admin's view of the list of users within the system including themselves" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/databaseBackup.jpg" alt="Admin's ability to create and restore from a database backup" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/busDepot.jpg" alt="The form for creating or uploading bus depot information" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/pickupDropoff.jpg" alt="The form to create pickup/dropoff point for students" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/route1.jpg" alt="Routing form part 1 with information about the route such as name, group, vehicle, driver, starting/ending locations, time/distance of the route, and unassigned students" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/school_management/route2.jpg" alt="Routing form part 2 with the assigned students, form actions, and the map of the route that includes the pickup/dropoff locations and student pickup/dropoff locations" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#schoolManagementCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#schoolManagementCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This is a school management software created for my Computer Science capstone project. It was built using a variety of 
+                        backend and frontend languages and has a persistent MySQL database running on a Tomcat server. The purpose of this software 
+                        was to manage a school districts' data and then create school bus routes for the student's within the district. The software 
+                        features role based authentication with four different roles with different permissions. Utilizes Google Maps API to determine locational
+                        data and determine efficient bus routes. It also features uploadig/exporting data using CSVs and has a database backup and restore feature.
+                        setup.
+                    </p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="resourcesUsed">
+                    <h3>Resources Used:</h3>
+                    <div>
+                        <p>Backend</p>
+                        <ul>
+                            <li>Spring Boot/Thymeleaf</li>
+                            <li>JUnit</li>
+                            <li>Java Mail Sender</li>
+                            <li>Google Maps API</li>
+                            <li>MySQL Server & Database</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Frontend</p>
+                        <ul>
+                            <li>DataTables</li>
+                            <li>FontAwesome</li>
+                            <li>Bootstrap</li>
+                            <li>FlexBox</li>
+                            <li>Figma (for wireframe)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="yardsWebsite" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="yardsWebsiteCarousel" class="carousel carousel-fade .carousel-dark" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="1"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="2"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="3"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="4"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="5"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="6"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="7"></li>
+                        <li data-target="#yardsWebsiteCarousel" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/yards_website/desktopHome1.jpg" alt="Top of Yard's Continental website with header image and text" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/yards_website/desktopHome2.jpg" alt="Middle of homepage with images of local activites" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/yards_website/desktopHome3.jpg" alt="Middle of homepage with text of amenities" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/yards_website/desktopHome4.jpg" alt="Bottom of homepage with contact section and google maps location" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/yards_website/desktopPhotos.jpg" alt="Photo gallary with custom image selector below carousel" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/yards_website/mobileHome1.jpg" alt="Mobile version: Top of Yard's Continental website with header image and text" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/yards_website/mobileHome2.jpg" alt="Mobile version: middle of homepage with images of local activites" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/yards_website/mobileHome3.jpg" alt="Mobile version: Bottom of homepage with contact section and google maps location" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/yards_website/mobilePhotosjpg.jpg" alt="Mobile version: Photo gallary" class="d-block w-100">                            
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#yardsWebsiteCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#yardsWebsiteCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <aside class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This dynamic & mobile friendly webpage was built for Yard's Continental Community to assist in spreading information about the business and gain new customers. It
+                        features a customized bootstrap image carousel with additional handmade controls below the carousel and many resizable elements based on the browser's width. I currently
+                        handle it's domain and hosting. The website can be viewed at <a href="https://www.yardscontinental.com/">yardscontinental.com</a>.
+                    </p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources Used:</h3>
+                    <ul>
+                        <li>FlexBox</li>
+                        <li>Bootstrap</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div id="requestApp" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="requestAppCarousel" class="carousel carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#requestAppCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#requestAppCarousel" data-slide-to="1"></li>
+                        <li data-target="#requestAppCarousel" data-slide-to="2"></li>
+                        <li data-target="#requestAppCarousel" data-slide-to="3"></li>
+                        <li data-target="#requestAppCarousel" data-slide-to="4"></li>
+                        <li data-target="#requestAppCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/request_app/DESKTOP_RequestHome.PNG" alt="Request Application home page" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/request_app/DESKTOP_RequestTable.PNG" alt="Request Application datatable" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/request_app/DESKTOP_RequestForm.PNG" alt="Request Application form" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/request_app/MOBILE_RequestHome.PNG" alt="Request Application form" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/request_app/MOBILE_RequestTable.PNG" alt="Request Application datatable" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/request_app/MOBILE_RequestForm.PNG" alt="Request Application form" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#requestAppCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#requestAppCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This web application was made in order to serve as a request portal for members of Slippery Rock University to put in different kinds of data information requests</p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources Used:</h3>
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>FlexBox</li>
+                        <li>PDO</li>
+                        <li>Session</li>
+                        <li>Figma (for wireframe)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="garageWebsite" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="garageWebsiteCarousel" class="carousel carousel-fade .carousel-dark" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#garageWebsiteCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#garageWebsiteCarousel" data-slide-to="1"></li>
+                        <li data-target="#garageWebsiteCarousel" data-slide-to="2"></li>
+                        <li data-target="#garageWebsiteCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images\garage_website\DESKTOP_KrileyTop.PNG" alt="Top of Jim Kriley Garage's website" class="d-block w-100">                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/garage_website/DESKTOP_KrileyBottom.PNG" alt="Bottom of Jim Kriley Garage's website" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images\garage_website\MOBILE_KrileyTop.PNG" alt="Top of Jim Kriley Garage's website" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/garage_website/MOBILE_KrileyBottom.PNG" alt="Bottom of Jim Kriley Garage's website" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#garageWebsiteCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#garageWebsiteCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <aside class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This static webpage was built to help a business to promote common information that they recieve calls about.</p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources Used:</h3>
+                    <ul>
+                        <li>Fancybox</li>
+                        <li>FlexBox</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div id="uploadHub" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="uploadWebsiteCarousel" class="carousel carousel-fade .carousel-dark" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#uploadWebsiteCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#uploadWebsiteCarousel" data-slide-to="1"></li>
+                        <li data-target="#uploadWebsiteCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images\upload_hub/login.png" alt="Overlayed login screen with username/password" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/upload_hub/upload.png" alt="Shows the ability to upload a file within the specified requirements" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/upload_hub/brick.png" alt="Shows the ability to swap multiple bricks' information" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#uploadWebsiteCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#uploadWebsiteCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <aside class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This webpage was built in order to optimize the process in which the Slippery Rock University Advancement office 
+                        updated their web application databases. The primary functionality of this web app is the ability to upload a 
+                        column formatted CSV to add and overwrite existing values in the specified database.</p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources Used:</h3>
+                    <ul>
+                        <li>FlexBox</li>
+                        <li>PDO</li>
+                        <li>Session</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div id="covidTracker" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="covidTrackerCarousel" class="carousel carousel-fade .carousel-dark" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#covidTrackerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#covidTrackerCarousel" data-slide-to="1"></li>
+                        <li data-target="#covidTrackerCarousel" data-slide-to="2"></li>
+                        <li data-target="#covidTrackerCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/covid_tracker/main.png" alt="This page acts as the home page and has a hoverable map of the united states that shows the number of cases and deaths per states" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/covid_tracker/safety.png" alt="This page provides information to keep yourself safe from COVID-19" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/covid_tracker/calculator.png" alt="This page allows user input to calculate their risk of a COVID-19 infection" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/covid_tracker/china.png" alt="This page shows the statistics of other countires, specifially China on this page" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#covidTrackerCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#covidTrackerCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <aside class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This website's goal was to provide statistics and information relating to COVID-19 to spread awareness and safety practices to keep everyone safe. It was a group project for the SRU class "Structured and Dynamic Web Programming".</p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>XML</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources Used:</h3>
+                    <ul>
+                        <li>FlexBox</li>
+                        <li>jQuery</li>
+                        <li>AJAX</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div id="conversionApp" class="expandedPanel">
+            <div class="imageGallery">
+                <div id="conversionAppCarousel" class="carousel carousel-fade .carousel-dark" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#conversionAppCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#conversionAppCarousel" data-sli de-to="1"></li>
+                        <li data-target="#conversionAppCarousel" data-sli de-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="mobileIMG" src="images/conversion_app/landing.PNG" alt="The landing screen provides the user all of the available conversion abilities." class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/conversion_app/input.PNG" alt="This screen, like the others, provides the user with a metric and imperial input with various options." class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mobileIMG" src="images/conversion_app/temp.PNG" alt="Displays the temperature user input." class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#conversionAppCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#conversionAppCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <aside class="projectDescription">
+                <i class="far fa-times-circle fa-2x panelX"></i>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>This app's goal was to provide a conversion of various metric measurements to imperial measurements. It was a solo final project for the SRU class "Mobile App Development". It is functional on both Android and Apple devices.</p>
+                </div>
+                <div>
+                    <h3>Languages Used:</h3>
+                    <ul>
+                        <li>React-Native</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources Used:</h3>
+                    <ul>
+                        <li>Expo</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div id="socials">
+            <a href="https://www.linkedin.com/in/qsmith-qshane/" id="linkedin" target="_blank">
+                <img class="social" src="images/linkedIn.png">
+            </a>
+            <a href="https://github.com/TheCrazyShark" id="github" target="_blank">
+                <img class="social" src="images/github.png">
+            </a>
+            <a href="https://expo.dev/@sas1041?tab=snacks" id="expo" target="_blank">
+                <img class="social" src="images/expo.png">
+            </a>
+        </div>
+    </body>
+    <script src="./vendor/jquery-3.4.1.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/script.min.js"></script>
+</html> 
