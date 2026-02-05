@@ -65,14 +65,31 @@
                     opacity: 0;
                     transition: opacity 1s;">
                     
-                    Will you be my valentines? <br>❤️🥒❤️ <br>
-                    See you at <br>🏰+🫐
+                    <span id="mainMessage">Will you be my valentines? <br>❤️🥒❤️</span>
+                    <button id="yesBtn" style="display: inline-block; padding: 10px 24px; font-size: 1.1em; border-radius: 8px; border: none; background: #ff69b4; color: white; cursor: pointer; margin-top: 10px;">Yes</button> <br>
+                    <button id="noBtn" style="display: inline-block; padding: 6px 18px; font-size: 0.8em; border-radius: 8px; border: none; background: #290101; color: white; cursor: pointer; margin-top: 10px;">No</button>
                 </div>
             </div>
         </div>
     </div>
 
 	<script type="module">
+                // Button click to change message
+                document.addEventListener('DOMContentLoaded', function() {
+                    const yesBtn = document.getElementById('yesBtn');
+                    if (yesBtn) {
+                        yesBtn.addEventListener('click', function() {
+                            document.getElementById('mainMessage').innerHTML = "YAY!!!!!<br>See you at<br>🏰+🫐";
+                            yesBtn.style.display = 'none';
+                        });
+                    }
+                    const noBtn = document.getElementById('noBtn');
+                    if (noBtn) {
+                        noBtn.addEventListener('click', function() {
+                            noBtn.style.display = 'none';
+                        });
+                    }
+                });
         import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
         const canvas = document.getElementById("canvas");
