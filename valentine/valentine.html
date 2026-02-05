@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>?</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			background: #ffc8c8;
+		}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #ffc8c8;
+        }
+		#message {
+			display: none;
+			margin-top: 20px;
+			font-size: 1.2em;
+			color: #d14;
+		}
+		#showBtn {
+			padding: 10px 20px;
+			font-size: 1em;
+			cursor: pointer;
+		}
+        .centerWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+	</style>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+    <img id="heartGif" src="./../images/Valentine/hearts.gif" style="position: absolute; left: 0; top: 0; width:150px; height:250px; opacity:0; transition: opacity 1s; pointer-events: none;"/>
+    <div class="centerWrapper" style="display: flex">
+        <div>
+            <div id="canvasContainer" style="position: relative; width: 100vw; max-width: 600px; height: 100vw; max-height: 600px; display: flex; align-items: center; justify-content: center;">
+                <canvas id="canvas" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; max-width: 600px; max-height: 600px; background: transparent;"></canvas>
+                <div id="fadeText" style="
+                    display: none;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 2em;
+                    color: #d14;
+                    background: rgba(255,255,255,0.8);
+                    padding: 20px 40px;
+                    border-radius: 12px;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity 1s;">
+                    
+                    Will you be my valentines? <br>❤️🥒❤️ <br>
+                    See you at <br>🏰+🫐
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="module">
+        import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+        const canvas = document.getElementById("canvas");
+        const fadeText = document.getElementById("fadeText");
+            const container = document.getElementById("canvasContainer");
+        let lottieInstance;
+
+            function resizeCanvas() {
+                // Get container size
+                const rect = container.getBoundingClientRect();
+                // Set canvas size attributes
+                canvas.width = rect.width;
+                canvas.height = rect.height;
+            }
+
+            window.addEventListener('resize', resizeCanvas);
+            window.addEventListener('orientationchange', resizeCanvas);
+            resizeCanvas();
+
+        lottieInstance = new DotLottie({
+            autoplay: false,
+            loop: false,
+            canvas: canvas,
+            src: "https://lottie.host/7eb6793a-4680-483e-9867-d64403fd729c/pieFM5oDon.lottie",
+        });
+
+        canvas.addEventListener("click", function () {
+            if (lottieInstance) {
+                lottieInstance.play();
+                setTimeout(() => {
+                    fadeText.style.display = "block";
+                    const heartGif = document.getElementById('heartGif');
+                    heartGif.style.display = "block";
+                    setTimeout(() => {
+                        fadeText.style.opacity = 1;
+                        heartGif.style.opacity = 1;
+                        canvas.style.transition = "opacity 1s";
+                        canvas.style.opacity = 0;
+                    }, 50);
+                }, 5000);
+            }
+        });
+		document.getElementById('showBtn').addEventListener('click', function() {
+			document.getElementById('showBtn').style.display = 'none';
+			document.getElementById('message').style.display = 'block';
+		});
+	</script>
+</body>
+</html>
